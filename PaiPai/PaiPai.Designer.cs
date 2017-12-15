@@ -46,8 +46,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.RadButWeb = new System.Windows.Forms.RadioButton();
             this.RadButLocal = new System.Windows.Forms.RadioButton();
+            this.RadButWeb = new System.Windows.Forms.RadioButton();
+            this.LabRunStatus = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -121,7 +122,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.TxtOptInfor);
-            this.groupBox1.Location = new System.Drawing.Point(13, 127);
+            this.groupBox1.Location = new System.Drawing.Point(13, 175);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(574, 254);
             this.groupBox1.TabIndex = 11;
@@ -208,17 +209,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "选择时间";
             // 
-            // RadButWeb
-            // 
-            this.RadButWeb.AutoSize = true;
-            this.RadButWeb.Location = new System.Drawing.Point(6, 21);
-            this.RadButWeb.Name = "RadButWeb";
-            this.RadButWeb.Size = new System.Drawing.Size(77, 16);
-            this.RadButWeb.TabIndex = 21;
-            this.RadButWeb.TabStop = true;
-            this.RadButWeb.Text = "RadButWeb";
-            this.RadButWeb.UseVisualStyleBackColor = true;
-            // 
             // RadButLocal
             // 
             this.RadButLocal.AutoSize = true;
@@ -230,11 +220,32 @@
             this.RadButLocal.Text = "RadButLocal";
             this.RadButLocal.UseVisualStyleBackColor = true;
             // 
+            // RadButWeb
+            // 
+            this.RadButWeb.AutoSize = true;
+            this.RadButWeb.Location = new System.Drawing.Point(6, 21);
+            this.RadButWeb.Name = "RadButWeb";
+            this.RadButWeb.Size = new System.Drawing.Size(77, 16);
+            this.RadButWeb.TabIndex = 21;
+            this.RadButWeb.TabStop = true;
+            this.RadButWeb.Text = "RadButWeb";
+            this.RadButWeb.UseVisualStyleBackColor = true;
+            // 
+            // LabRunStatus
+            // 
+            this.LabRunStatus.AutoSize = true;
+            this.LabRunStatus.Location = new System.Drawing.Point(17, 132);
+            this.LabRunStatus.Name = "LabRunStatus";
+            this.LabRunStatus.Size = new System.Drawing.Size(77, 12);
+            this.LabRunStatus.TabIndex = 21;
+            this.LabRunStatus.Text = "LabRunStatus";
+            // 
             // PaiPai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 393);
+            this.ClientSize = new System.Drawing.Size(600, 452);
+            this.Controls.Add(this.LabRunStatus);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ButStop);
@@ -249,6 +260,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -272,6 +284,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton RadButLocal;
         private System.Windows.Forms.RadioButton RadButWeb;
+        private System.Windows.Forms.Label LabRunStatus;
     }
 }
 

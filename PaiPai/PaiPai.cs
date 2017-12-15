@@ -41,6 +41,8 @@ namespace PaiPai
 
             InitializeComponent();
 
+            LabRunStatus.Text = "未开始拍牌";
+
             TxtOptInfor.Text += "获取网络时间...\r\n请先设置参数\r\n";
             StartPosition = FormStartPosition.CenterScreen;
             GetLanguage();
@@ -202,6 +204,8 @@ namespace PaiPai
                 _mbStartWork = true;
                 _mStartWork = new Thread(Start);
                 _mStartWork.Start();
+                LabRunStatus.ForeColor = Color.Green;
+                LabRunStatus.Text = "/*****开始自动拍牌*****/";
                 TxtOptInfor.Text += "启动自动拍牌，自动加价金额为 ： " + _mPositionParam.Price + "\r\n";
             }
         }
@@ -210,6 +214,8 @@ namespace PaiPai
         {
             if (_mbStartWork)
             {
+                LabRunStatus.ForeColor = Color.Red;
+                LabRunStatus.Text = "/*****停止拍牌*****/";
                 _mbStartWork = false;
                 _mStartWork.Join();
             }
@@ -238,7 +244,7 @@ namespace PaiPai
                     SetWebText(showTime.ToString("yyyy-MM-dd HH:mm:ss.fff"));
                     if (i == 20)
                     {
-                        nowTime = Convert.ToDateTime(dt);
+                        nowTime = Convert.ToDateTime(GetNetDateTime());
                         i = 0;
                     }
                     Thread.Sleep(50);
@@ -357,6 +363,14 @@ namespace PaiPai
                 if (_mNowTime.Hour == temp2.Hour &&
                     _mNowTime.Minute == temp2.Minute &&
                     _mNowTime.Second == temp2.Second)
+                {
+                    SetBid();
+                }
+
+                DateTime temp4 = Convert.ToDateTime(_mPositionParam.BidTime);
+                if (_mNowTime.Hour == temp4.Hour &&
+                    _mNowTime.Minute == temp4.Minute &&
+                    _mNowTime.Second == temp4.Second)
                 {
                     SetBid();
                 }
