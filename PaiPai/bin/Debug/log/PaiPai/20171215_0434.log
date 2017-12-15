@@ -1,0 +1,47 @@
+
+
+-= PaiPai2017-12-15 16:34:20.494 =-
+===============================================================================
+-- Process Info ------------------------------
+Program Path  :   C:\WorkDoc\Code\GitHub\paipai\PaiPai\bin\Debug\PaiPai.exe
+Process ID    :   16840
+----------------------------------------------
+
+
+-= PaiPai2017-12-15 16:34:42.636 =-
+===============================================================================
+-- Process Info ------------------------------
+Program Path  :   C:\WorkDoc\Code\GitHub\paipai\PaiPai\bin\Debug\PaiPai.exe
+Process ID    :   5368
+----------------------------------------------
+2017-12-15 16:36:50.170       *>    Log Exception : SetBid: 2564, 729
+2017-12-15 16:36:50.285       *>    Log Exception : SetBid: 2675, 691
+2017-12-15 16:36:50.349       *>    Log Exception : SetBid: 2756, 705
+2017-12-15 16:36:50.401       *>    Log Exception : SetBid: 2836, 683
+2017-12-15 16:36:50.475       *>    Log Exception : SetBid: 2839, 683
+2017-12-15 16:36:50.532       *>    Log Exception : SetBid: 2801, 695
+2017-12-15 16:36:50.736       *>    Log Exception : SetBid: 2827, 672
+2017-12-15 16:36:50.790       *>    Log Exception : SetBid: 2964, 610
+2017-12-15 16:36:50.843       *>    Log Exception : SetBid: 3086, 510
+2017-12-15 16:36:50.895       *>    Log Exception : SetBid: 3111, 477
+2017-12-15 16:36:50.946       *>    Log Exception : SetBid: 3112, 469
+2017-12-15 16:36:50.998       *>    Log Exception : SetBid: 3115, 447
+2017-12-15 16:36:51.050       *>    Log Exception : SetBid: 3097, 436
+2017-12-15 16:36:59.524       *>    Log Exception : SetRight: 3023, 416
+2017-12-15 16:37:03.053       *>    Log Exception : SetRight: 2710, 511
+2017-12-15 16:37:55.555       *>    Log Exception : Addprice: 633, 561
+2017-12-15 16:37:55.613       *>    Log Exception : Addprice: 655, 541
+2017-12-15 16:37:55.664       *>    Log Exception : Addprice: 680, 503
+2017-12-15 16:37:55.716       *>    Log Exception : Addprice: 688, 494
+2017-12-15 16:37:55.769       *>    Log Exception : Addprice: 698, 481
+2017-12-15 16:37:55.830       *>    Log Exception : Addprice: 709, 449
+2017-12-15 16:37:55.888       *>    Log Exception : Addprice: 724, 424
+2017-12-15 16:37:55.945       *>    Log Exception : Addprice: 739, 414
+2017-12-15 16:37:55.997       *>    Log Exception : Addprice: 745, 406
+2017-12-15 16:37:56.048       *>    Log Exception : Addprice: 742, 400
+2017-12-15 16:37:56.103       *>    Log Exception : Addprice: 732, 370
+2017-12-15 16:37:56.155       *>    Log Exception : Addprice: 728, 360
+2017-12-15 16:37:56.209       *>    Log Exception : Addprice: 727, 355
+2017-12-15 16:37:56.260       *>    Log Exception : Addprice: 726, 354
+2017-12-15 16:37:56.313       *>    Log Exception : Addprice: 726, 353
+2017-12-15 16:38:59.080       *>    Log Exception : SetBid: 2979, 464

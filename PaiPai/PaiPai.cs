@@ -224,6 +224,7 @@ namespace PaiPai
             //获取网络时间
             string dt = GetNetDateTime();
             DateTime nowTime = Convert.ToDateTime(dt);
+            int i = 0;
             while (_mbWebTimeClock)
             {
                 try
@@ -235,12 +236,18 @@ namespace PaiPai
                         _mNowTime = showTime;
                     }
                     SetWebText(showTime.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+                    if (i == 20)
+                    {
+                        nowTime = Convert.ToDateTime(dt);
+                        i = 0;
+                    }
                     Thread.Sleep(50);
                 }
                 catch
                 {
                     // ignored
                 }
+                i++;
             }
 
         }
@@ -305,6 +312,7 @@ namespace PaiPai
         private void LocalTimeClock()
         {
             DateTime nowTime = DateTime.Now;
+            int i = 0;
             while (_mbWebTimeClock)
             {
                 try
@@ -314,12 +322,18 @@ namespace PaiPai
                     if(RadButLocal.Checked)
                         _mNowTime = showTime;
                     SetLoaclText(showTime.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+                    if (i == 20)
+                    {
+                        nowTime = DateTime.Now;
+                        i = 0;
+                    }
                     Thread.Sleep(50);
                 }
                 catch
                 {
                     // ignored
                 }
+                i++;
             }
         }
 

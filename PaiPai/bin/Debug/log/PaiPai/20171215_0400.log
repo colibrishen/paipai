@@ -1,0 +1,11 @@
+
+
+-= PaiPai2017-12-15 16:00:32.123 =-
+===============================================================================
+-- Process Info ------------------------------
+Program Path  :   C:\WorkDoc\Code\GitHub\paipai\PaiPai\bin\Debug\PaiPai.exe
+Process ID    :   11228
+----------------------------------------------
+2017-12-15 16:21:43.320       *>    Log Exception : Addprice: 2581, 427
+2017-12-15 16:21:45.342       *>    Log Exception : SetBid: 2581, 427
+2017-12-15 16:21:53.242       *>    Log Exception : SetRight: 2581, 427
